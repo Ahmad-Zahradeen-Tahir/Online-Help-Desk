@@ -90,7 +90,7 @@
 
 .inputIcon {
   position: absolute;
-  top: 50%;
+  top: 65%;
   left: 0.75rem;
   transform: translateY(-50%);
   color: #94a3b8;
@@ -163,7 +163,7 @@
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  width:400px;
+  width:320px;
   transition: all 0.2s;
 }
 

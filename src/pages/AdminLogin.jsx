@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './AdminLogin.module.css';
 import { FaShieldAlt, FaUserShield, FaKey, FaExclamationTriangle, FaIdBadge, FaLock, FaMobileAlt, FaSignInAlt, FaPhone, FaEnvelope, FaClock, FaGlobe, FaArrowLeft, FaEye, FaEyeSlash } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const AdminLogin = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [twoFactor, setTwoFactor] = useState('');
@@ -108,8 +108,11 @@ const AdminLogin = () => {
           </form>
 
           <div className={styles.footer}>
+            
             <div className={styles.backLink}>
+              <Link to="/">
               <FaArrowLeft className={styles.icon} /> Back to User Login
+              </Link>
             </div>
           </div>
         </div>

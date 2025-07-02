@@ -1,7 +1,7 @@
 // StatusTrackerDashboard.jsx
 import React from 'react';
 import styles from './StatusTrackerDashboard.module.css';
-
+import { Link } from 'react-router-dom';
 
 const StatusTrackerDashboard = () => {
     return (
@@ -203,10 +203,12 @@ const StatusTrackerDashboard = () => {
 
             {/* Action Buttons */}
             <div className={styles.actionButtons}>
-                <button className={styles.primaryButton} onClick={() => alert('Add new ticket functionality would be implemented here')}>
+                <Link to="/ticketSubmission">
+                <button className={styles.primaryButton}>
                     <i className="fas fa-plus"></i>
                     Add Ticket
                 </button>
+                </Link>
             </div>
         </div>
     );
