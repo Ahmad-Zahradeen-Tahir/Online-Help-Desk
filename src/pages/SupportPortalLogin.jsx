@@ -100,13 +100,14 @@ export default function SupportPortalLogin() {
               </button>
             </div>
           </div>
-
+          <Link to="/statusTrackerDashboard"> 
           <button type="submit" className={styles.signInButton}>
             <svg className={styles.buttonIcon} viewBox="0 0 24 24" fill="currentColor">
               <path d="M11 7L9.6 8.4l2.6 2.6H2v2h10.2l-2.6 2.6L11 17l5-5-5-5zm9 12h-8v2h8c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-8v2h8v12z" />
             </svg>
             Sign In
           </button>
+          </Link>
         </form>
 
         {/* Footer Links */}
@@ -117,6 +118,10 @@ export default function SupportPortalLogin() {
             </svg>
             Admin Login
           </Link>
+          <Link to="/agentlogin" className={styles.footerLink}>
+          Agent Login
+          </Link>
+
           <Link to="/supportPortalRegister"className={styles.footerLink}>
             <svg className={styles.linkIcon} viewBox="0 0 24 24" fill="currentColor">
               <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />

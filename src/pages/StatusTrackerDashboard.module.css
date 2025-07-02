@@ -1,0 +1,410 @@
+/* StatusTrackerDashboard.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px; 
+    font-family: sans-serif;
+    min-height: 100vh;
+  
+}
+
+
+.header {
+    margin-bottom: 32px; /* mb-8 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerContent {
+   margin-bottom: 20px;
+}
+
+.mainTitle {
+    font-size: 36px;
+    font-weight: 700; 
+    color: #0f172a; 
+    margin-bottom: 8px; 
+}
+
+.subtitle {
+    color: #475569; 
+}
+
+.totalTickets {
+    background-color: #fff; 
+    border-radius: 8px; 
+    padding: 8px 16px; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    left:-87%;
+    top:70px;
+}
+
+.totalTicketsLabel {
+    font-size: 14px; 
+    color: #64748b; 
+}
+
+.totalTicketsCount {
+    font-weight: 600; 
+    color: #0f172a; 
+    margin-left: 4px; 
+}
+
+/* Kanban Board */
+.kanbanBoard {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px; 
+    margin-bottom: 32px; 
+}
+
+@media (min-width: 1024px) { 
+    .kanbanBoard {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.kanbanColumn {
+    min-height: 600px;
+}
+
+.columnWrapper {
+    background-color: #fff; /* bg-white */
+    border-radius: 12px; /* rounded-xl */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    border: 1px solid #e2e8f0; /* border border-gray-200 */
+    overflow: hidden;
+}
+
+.columnHeader {
+    padding: 16px 24px; /* px-6 py-4 */
+}
+
+.openHeader {
+    background: linear-gradient(to right, #ef4444, #dc2626); /* from-red-500 to-red-600 */
+}
+
+.inProgressHeader {
+    background: linear-gradient(to right, #fbbf24, #d97706); /* from-amber-500 to-amber-600 */
+}
+
+.resolvedHeader {
+    background: linear-gradient(to right, #10b981, #059669); /* from-emerald-500 to-emerald-600 */
+}
+
+.columnTitleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.columnTitle {
+    font-size: 18px; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #fff; /* text-white */
+    display: flex;
+    align-items: center;
+}
+
+.columnTitle i {
+    margin-right: 8px; 
+}
+
+.ticketCount {
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #fff;
+    font-size: 14px; 
+    font-weight: 500; 
+    padding: 4px 12px; 
+    border-radius: 9999px; 
+}
+
+.ticketList {
+    padding: 16px; 
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+}
+
+.ticketCard {
+    background-color: #fff; 
+    border: 1px solid #e2e8f0; 
+    border-radius: 8px; 
+    padding: 16px; 
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.ticketCard:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* hover:shadow-md */
+    transform: translateY(-2px);
+}
+
+.ticketHeader {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 12px; /* mb-3 */
+}
+
+.ticketId {
+    display: inline-flex;
+    align-items: center;
+    padding: 2px 10px; /* px-2.5 py-0.5 */
+    border-radius: 9999px; /* rounded-full */
+    font-size: 12px; /* text-xs */
+    font-weight: 500; /* font-medium */
+}
+
+.openTicketId {
+    background-color: #fee2e2; /* bg-red-100 */
+    color: #b91c1c; /* text-red-800 */
+}
+
+.inProgressTicketId {
+    background-color: #fffbeb; /* bg-amber-100 */
+    color: #9a3412; /* text-amber-800 */
+}
+
+.resolvedTicketId {
+    background-color: #d1fae5; /* bg-emerald-100 */
+    color: #065f46; /* text-emerald-800 */
+}
+
+.priority {
+    display: flex;
+    align-items: center;
+    gap: 4px; /* space-x-1 */
+}
+
+.priorityDot {
+    width: 8px; /* w-2 */
+    height: 8px; /* h-2 */
+    border-radius: 9999px; /* rounded-full */
+}
+
+.highPriority {
+    background-color: #f87171; /* bg-red-400 */
+}
+
+.mediumPriority {
+    background-color: #facc15; /* bg-yellow-400 */
+}
+
+.lowPriority {
+    background-color: #9ca3af; /* bg-gray-400 */
+}
+
+.priorityText {
+    font-size: 12px; /* text-xs */
+    color: #64748b; /* text-gray-500 */
+}
+
+.ticketTitle {
+    font-weight: 600; /* font-semibold */
+    color: #0f172a; /* text-gray-900 */
+    margin-bottom: 8px; /* mb-2 */
+}
+
+.ticketDescription {
+    font-size: 14px; /* text-sm */
+    color: #475569; /* text-gray-600 */
+    margin-bottom: 12px; /* mb-3 */
+}
+
+.ticketFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assignee {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* space-x-2 */
+}
+
+.assigneeAvatar {
+    width: 24px; 
+    height: 24px;
+    border-radius: 9999px; 
+    background-color: #cbd5e1; 
+}
+
+.assigneeName {
+    color: #64748b; 
+}
+
+.ticketTime {
+    font-size: 12px; 
+    color: #94a3b8; 
+}
+
+
+.actionButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px; /* mb-8 */
+}
+
+.primaryButton {
+    background-color: #0284c7; /* bg-primary-600 */
+    color: #fff; /* text-white */
+    padding: 12px 24px; /* px-6 py-3 */
+    border-radius: 8px; /* rounded-lg */
+    font-weight: 500; /* font-medium */
+    transition: background-color 0.15s ease-in-out; /* transition-colors */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top:100px;
+    right:100px;
+}
+
+.primaryButton:hover {
+    background-color: #0369a1; /* hover:bg-primary-700 */
+}
+
+.primaryButton i {
+    margin-right: 8px; /* mr-2 */
+}
+
+.secondaryButtons {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* space-x-4 */
+}
+
+.exportButton {
+    background-color: #fff; /* bg-white */
+    color: #334155; /* text-gray-700 */
+    padding: 12px 24px; /* px-6 py-3 */
+    border-radius: 8px; /* rounded-lg */
+    font-weight: 500; /* font-medium */
+    transition: background-color 0.15s ease-in-out; /* transition-colors */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    border: 1px solid #94a3b8; /* border border-gray-300 */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.exportButton:hover {
+    background-color: #f1f5f9; /* hover:bg-gray-50 */
+}
+
+.exportButton i {
+    margin-right: 8px; /* mr-2 */
+}
+
+.backButton {
+    background-color: #475569; /* bg-gray-600 */
+    color: #fff; /* text-white */
+    padding: 12px 24px; /* px-6 py-3 */
+    border-radius: 8px; /* rounded-lg */
+    font-weight: 500; /* font-medium */
+    transition: background-color 0.15s ease-in-out; /* transition-colors */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    border: none;
+    cursor: pointer;
+}
+
+.backButton:hover {
+    background-color: #334155; /* hover:bg-gray-700 */
+}
+
+.backButton i {
+    margin-right: 8px; /* mr-2 */
+}
+
+/* Quick Stats */
+.quickStats {
+    margin-top: 32px; /* mt-8 */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px; /* gap-4 */
+}
+
+@media (min-width: 768px) { /* md breakpoint */
+    .quickStats {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.statCard {
+    background-color: #fff; /* bg-white */
+    border-radius: 8px; /* rounded-lg */
+    padding: 16px; /* p-4 */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+    border: 1px solid #e2e8f0; /* border border-gray-200 */
+}
+
+.statContent {
+    display: flex;
+    align-items: center;
+}
+
+.statIconWrapper {
+    padding: 8px; /* p-2 */
+    border-radius: 8px; /* rounded-lg */
+}
+
+.openStatIcon {
+    background-color: #fee2e2; /* bg-red-100 */
+}
+
+.openStatIcon i {
+    color: #dc2626; /* text-red-600 */
+}
+
+.inProgressStatIcon {
+    background-color: #fffbeb; /* bg-amber-100 */
+}
+
+.inProgressStatIcon i {
+    color: #d97706; /* text-amber-600 */
+}
+
+.resolvedStatIcon {
+    background-color: #d1fae5; /* bg-emerald-100 */
+}
+
+.resolvedStatIcon i {
+    color: #059669; /* text-emerald-600 */
+}
+
+.primaryStatIcon {
+    background-color: #e0f2fe; /* bg-primary-100 */
+}
+
+.primaryStatIcon i {
+    color: #0284c7; /* text-primary-600 */
+}
+
+.statText {
+    margin-left: 12px; /* ml-3 */
+}
+
+.statLabel {
+    font-size: 14px; /* text-sm */
+    font-weight: 500; /* font-medium */
+    color: #475569; /* text-gray-600 */
+}
+
+.statValue {
+    font-size: 18px; /* text-lg */
+    font-weight: 600; /* font-semibold */
+    color: #0f172a; /* text-gray-900 */
+}
