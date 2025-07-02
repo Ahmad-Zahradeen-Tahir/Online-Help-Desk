@@ -19,7 +19,7 @@ const TicketSubmission = () => {
               Get help from our support team by submitting detailed ticket
             </span>
           </div>
-          <Link to={"/adminLogin"} className={classes.btnHolder}>
+          <Link to={"/"} className={classes.btnHolder}>
             <span>
               <IoMdArrowRoundBack /> Back to Dashboard
             </span>

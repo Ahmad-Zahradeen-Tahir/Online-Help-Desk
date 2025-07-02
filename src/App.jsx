@@ -8,8 +8,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<SupportPortalLogin/>}/> */}
-          <Route path="/" element={<TicketSubmission />} />
+          <Route path="/" element={<SupportPortalLogin/>}/>
+          <Route path="/ticketSubmission" element={<TicketSubmission />} />
           <Route
             path="/supportPortalRegister"
             element={<SupportPortalRegister />}
