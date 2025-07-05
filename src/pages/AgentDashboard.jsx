@@ -121,8 +121,8 @@ const AgentDashboard = () => {
     <div className={styles.container}>
       <header className={styles.header}>
         <nav className={styles.navigation}>
-          <a href="#" className={`${styles.navItem} ${styles.active}`}>Dashboard</a>
-          <a href="#" className={styles.navItem}>Status Tracker</a>
+          <Link to="#" className={`${styles.navItem} ${styles.active}`}>Dashboard</Link>
+          <Link to="/statusTrackerDashboard" className={styles.navItem}>Status Tracker</Link>
           <Link to='/reportingModule' className={styles.navItem}>Reports</Link>
         </nav>
         <div className={styles.userInfo}>
