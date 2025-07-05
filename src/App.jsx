@@ -7,12 +7,14 @@ import SupportPortalLogin from "./pages/SupportPortalLogin";
 import SupportPortalRegister from "./pages/Support Portal Register";
 import AdminLogin from "./pages/AdminLogin";
 import TicketSubmission from "./pages/TicketSubmission";
+import ReportingModule from "./pages/ReportingModule";
 function App() {
   return (
     <>
       <BrowserRouter>
       <Routes>
         <Route path="/" element={<SupportPortalLogin/>}/>
+        <Route path="/reportingModule" element={<ReportingModule/> }/>
         <Route path="/ticketSubmission" element={<TicketSubmission />} />
         <Route path="/supportPortalRegister" element={<SupportPortalRegister/>}/>
         <Route path="/adminLogin" element={<AdminLogin/>}/>

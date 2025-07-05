@@ -1,0 +1,227 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 6rem;
+  margin-bottom: 3rem;
+}
+
+.head {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.headerHolder h2 {
+  margin: 0;
+  padding: 1rem 0;
+  font-weight: 300;
+  font-size: 2.1rem;
+}
+
+.head span {
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.firstCard{
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    border: 1px solid rgba(226, 232, 240, 1);
+    align-items: center;
+    flex-direction: row;
+    gap: 1.4rem;
+}
+
+.inputHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.inputHolder label {
+  font-size: 0.8rem;
+}
+
+.inputHolder input {
+  width: 100%;
+  padding: 0.6rem;
+  outline: none;
+  border: 1px solid rgba(203, 213, 225, 1);
+  border-radius: 5px;
+}
+
+.inputHolder select{
+    width: 20rem;
+    padding: .6rem;
+    outline: none;
+    border: 1px solid rgba(203, 213, 225, 1);
+    background: rgb(244, 244, 244);
+    border-radius: 5px;
+}
+
+.filterBtn{
+    background: rgba(2, 132, 199, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    height: fit-content;
+    padding: .6rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    font-size: .9rem;
+    outline: none;
+    cursor: pointer;
+}
+
+.dashData{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dashCard{
+    flex: 1;
+    border: 1px solid rgba(226, 232, 240, 1);
+    background: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.iconBg{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .7rem .5rem;
+    font-size: 1.4rem;
+    height: fit-content;
+}
+
+.txtHolder{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.txtHolder span:nth-child(1){
+    font-size: .7rem;
+}
+
+.txtHolder span:nth-child(2){
+    font-size: 1.2rem;
+}
+
+.txtHolder span:nth-child(3){
+    font-size: .6rem;
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.volRes{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.volResCard{
+    flex: 1;
+    background: white;
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 8px;
+}
+
+.volResCard h3, .graphCard h3{
+    font-size: .9rem;
+    padding: .8rem 1.2rem;
+    font-weight: 300;
+    display: flex;
+    gap: .8rem;
+    color: black;
+    margin: 0;
+    border-bottom: 1px solid rgba(203, 213, 225, 1);
+}
+
+.volResCard h3 svg, .graphCard h3 svg{
+    color: rgba(14, 165, 233, 1);
+    font-size: 1.2rem;
+}
+
+.chartContainer{
+    height: 20rem;
+    width: 100%;
+}
+
+.graphCard{
+    margin-top: 2rem;
+    width: 100%;
+    background: white;
+    border: 1px solid rgba(226, 232, 240, 1);
+    border-radius: 8px;
+}
+
+.chartContainer img{
+    width: 100%;
+}
+
+.exp{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expL{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.expL button{
+    padding: .4rem .8rem;
+    background: white;
+    border: 1px solid rgba(203, 213, 225, 1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: .5rem;
+}
+
+.backBtn{
+    background: rgba(71, 85, 105, 1);
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}

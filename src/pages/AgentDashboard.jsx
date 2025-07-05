@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./AgentDashboard.module.css";
+import { Link } from "react-router-dom";
 
 const AgentDashboard = () => {
   const [stats, setStats] = useState({
@@ -122,7 +123,7 @@ const AgentDashboard = () => {
         <nav className={styles.navigation}>
           <a href="#" className={`${styles.navItem} ${styles.active}`}>Dashboard</a>
           <a href="#" className={styles.navItem}>Status Tracker</a>
-          <a href="#" className={styles.navItem}>Reports</a>
+          <Link to='/reportingModule' className={styles.navItem}>Reports</Link>
         </nav>
         <div className={styles.userInfo}>
           <div className={styles.statusIndicator}>
