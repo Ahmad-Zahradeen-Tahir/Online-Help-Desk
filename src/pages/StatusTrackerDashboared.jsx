@@ -9,7 +9,7 @@ const StatusTrackerDashboard = () => {
             {/* Header */}
             <div className={styles.header}>
                 <div className={styles.headerContent}>
-                    <h1 className={styles.mainTitle}>Status Tracker</h1>
+                    <h1 className={styles.mainTitle}>Status Trackeqr</h1>
                     <p className={styles.subtitle}>Track and manage ticket progress across different stages</p>
                 </div>
                 <div className={styles.totalTickets}>
@@ -48,7 +48,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>User unable to access their account</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                         <p className={styles.assigneeAvatar}>JD</p>
                                         <span className={styles.assigneeName}>John Doe</span>
                                     </div>
                                     <span className={styles.ticketTime}>2 hours ago</span>
@@ -70,7 +70,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>Transaction failed during checkout</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                         <p className={styles.assigneeAvatar}>JS</p>
                                         <span className={styles.assigneeName}>Jane Smith</span>
                                     </div>
                                     <span className={styles.ticketTime}>4 hours ago</span>
@@ -108,7 +108,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>Request for dark mode implementation</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                         <p className={styles.assigneeAvatar}>MJ</p>
                                         <span className={styles.assigneeName}>Mike Johnson</span>
                                     </div>
                                     <span className={styles.ticketTime}>1 day ago</span>
@@ -130,7 +130,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>Charts not loading properly on mobile</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                      <p className={styles.assigneeAvatar}>SW</p>
                                         <span className={styles.assigneeName}>Sarah Wilson</span>
                                     </div>
                                     <span className={styles.ticketTime}>6 hours ago</span>
@@ -168,7 +168,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>Email not being sent to users</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                         <p className={styles.assigneeAvatar}>AB</p>
                                         <span className={styles.assigneeName}>Alex Brown</span>
                                     </div>
                                     <span className={styles.ticketTime}>2 days ago</span>
@@ -190,7 +190,7 @@ const StatusTrackerDashboard = () => {
                                 <p className={styles.ticketDescription}>Update email template design</p>
                                 <div className={styles.ticketFooter}>
                                     <div className={styles.assignee}>
-                                        <img src="/placeholder.svg?height=24&width=24" alt="Assignee" className={styles.assigneeAvatar} />
+                                        <p className={styles.assigneeAvatar}>ED</p>
                                         <span className={styles.assigneeName}>Emma Davis</span>
                                     </div>
                                     <span className={styles.ticketTime}>3 days ago</span>

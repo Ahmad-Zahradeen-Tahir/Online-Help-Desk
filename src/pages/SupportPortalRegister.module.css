@@ -115,6 +115,26 @@
   color: #94a3b8;
 }
 
+.user{
+margin-top:25px;
+}
+.envelope{
+  margin-top:25px;
+}
+.building{
+  margin-top:25px;
+}
+.lock{
+  margin-bottom:40px;
+}
+
+.eye{
+  margin-bottom:40px;
+}
+
+.padlock{
+  margin-top:20px;
+}
 .optional {
   color: #94a3b8;
   font-weight: 400;

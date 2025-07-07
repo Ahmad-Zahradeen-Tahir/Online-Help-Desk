@@ -8,6 +8,7 @@ import SupportPortalRegister from "./pages/Support Portal Register";
 import AdminLogin from "./pages/AdminLogin";
 import TicketSubmission from "./pages/TicketSubmission";
 import ReportingModule from "./pages/ReportingModule";
+import TicketDashboard from "./pages/TicketDashboard";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <Route path="/statusTrackerDashboard" element={<StatusTrackerDashboard/>}/>
         <Route path="/agentLogin" element={<AgentPortalLogin/>} />
         <Route path="/agentDashBoard" element={<AgentDashboard/>}/>
+        <Route path="/ticketDashboard" element ={<TicketDashboard />}/>
         </Routes>
       </BrowserRouter>
     </>

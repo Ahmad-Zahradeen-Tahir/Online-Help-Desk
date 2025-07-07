@@ -2,6 +2,7 @@
 
 import React, { useState } from "react"
 import styles from "./AgentRegistration.module.css"
+import { Link } from "react-router-dom"
 
 const AgentRegistration = () => {
   const [formData, setFormData] = useState({
@@ -206,10 +207,11 @@ const AgentRegistration = () => {
               <div className={styles.helperText}>Leave empty for auto-generation</div>
             </div>
           </div>
-
+          <Link  to="/agentLogin">
           <button type="submit" className={styles.submitButton}>
             Register
           </button>
+          </Link>
         </form>
       </div>
     </div>

@@ -191,9 +191,12 @@ body{
   gap: 8px;
   transition: background-color 0.2s;
   margin: 40px;
-  margin-top:70px;
+  margin-top:70px; 
 }
 
+a {
+  text-decoration: none;
+}
 .signInButton:hover {
   background-color: #1565c0;
 }
@@ -202,6 +205,8 @@ body{
   width: 16px;
   height: 16px;
 }
+
+
 
 .footer {
   display: flex;

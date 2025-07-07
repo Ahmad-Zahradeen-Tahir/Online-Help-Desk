@@ -237,7 +237,15 @@
     height: 24px;
     border-radius: 9999px; 
     background-color: #cbd5e1; 
+    border:  1px solid black;
+    background-color: #0369a1;
+    font-size: 10px;
+    text-align: center;
+    padding-top:5px;
+    padding-right: 2px;
+    
 }
+
 
 .assigneeName {
     color: #64748b; 

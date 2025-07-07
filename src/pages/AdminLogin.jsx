@@ -32,10 +32,7 @@ const AdminLogin = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    if (twoFactor.length !== 6) {
-      alert('Please enter a valid 6-digit authentication code.');
-      return;
-    }
+   
 
     setSubmitting(true);
 
@@ -98,6 +95,7 @@ const AdminLogin = () => {
                 </button>
               </div>
             </div>
+            <Link to="/ticketDashboard">
             <button type="submit" className={styles.submitBtn} disabled={submitting}>
               {submitting ? (
                 <><FaSignInAlt className={styles.icon} /> Authenticating...</>
@@ -105,6 +103,7 @@ const AdminLogin = () => {
                 <><FaSignInAlt className={styles.icon} /> Secure Login</>
               )}
             </button>
+            </Link>
           </form>
 
           <div className={styles.footer}>

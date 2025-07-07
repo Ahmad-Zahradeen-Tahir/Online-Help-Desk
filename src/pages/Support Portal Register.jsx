@@ -79,31 +79,31 @@ const SupportPortalRegister = () => {
             <div className={styles.row}>
               <div className={styles.inputGroup}>
                 <label>First Name</label>
-                <div className={styles.inputIcon}><FaUser /></div>
+                <div className={styles.inputIcon}><FaUser className={styles.user} /></div>
                 <input type="text" name="firstName" required onChange={handleChange} />
               </div>
               <div className={styles.inputGroup}>
                 <label>Last Name</label>
-                <div className={styles.inputIcon}><FaUser /></div>
+                <div className={styles.inputIcon}><FaUser className={styles.user} /></div>
                 <input type="text" name="lastName" required onChange={handleChange} />
               </div>
             </div>
             <div className={styles.inputGroup}>
               <label>Email Address</label>
-              <div className={styles.inputIcon}><FaEnvelope /></div>
+              <div className={styles.inputIcon}><FaEnvelope className={styles.envelope} /></div>
               <input type="email" name="email" required onChange={handleChange} />
             </div>
             <div className={styles.inputGroup}>
               <label>Company <span className={styles.optional}>(Optional)</span></label>
-              <div className={styles.inputIcon}><FaBuilding /></div>
+              <div className={styles.inputIcon}><FaBuilding className={styles.building}/></div>
               <input type="text" name="company" onChange={handleChange} />
             </div>
             <div className={styles.inputGroup}>
               <label>Password</label>
-              <div className={styles.inputIcon}><FaLock /></div>
+              <div className={styles.inputIcon}><FaLock className={styles.lock} /></div>
               <input type={showPassword ? 'text' : 'password'} name="password" required onChange={handleChange} />
               <button type="button" className={styles.togglePassword} onClick={() => setShowPassword(!showPassword)}>
-                {showPassword ? <FaEyeSlash /> : <FaEye />}
+                {showPassword ? <FaEyeSlash className={styles.eye} /> : <FaEye className={styles.eye} />}
               </button>
               <div className={styles.passwordStrengthWrapper}>
                 <div style={{ width: `${passwordStrength.percent}%`, backgroundColor: passwordStrength.color }} className={styles.passwordStrength}></div>
@@ -112,7 +112,7 @@ const SupportPortalRegister = () => {
             </div>
             <div className={styles.inputGroup}>
               <label>Confirm Password</label>
-              <div className={styles.inputIcon}><FaLock /></div>
+              <div className={styles.inputIcon}><FaLock className={styles.padlock} /></div>
               <input type="password" name="confirmPassword" required onChange={handleChange} />
               {passwordMatch && (
                 <p className={passwordMatch === 'match' ? styles.match : styles.mismatch}>
